@@ -40,5 +40,6 @@ class InteractiveRecord
       values << "'#{send(col)}'" unless send(col).nil?
     end
     values.join(", ")
+  end
   
 end
