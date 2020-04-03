@@ -20,4 +20,16 @@ class InteractiveRecord
     column_names.compact
   end
   
+  def initialize(options={})
+    options.each do |property, value|
+      self.send("#{property}=", value)
+    end 
+  end
+  
+  def 
+  
+  def col_names_for_insert
+    self.class.column_names.delete_if {|col| col == "id"}.join(" , ")
+  end
+  
 end
