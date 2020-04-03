@@ -43,6 +43,6 @@ class InteractiveRecord
   end
   
   def save 
-    
+    sql = 
   
 end
